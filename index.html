@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoTransforma</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+    header {
+      background: url('1.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #43a047;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #2e7d32;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EcoTransforma</h1>
+    <p>Transformando residuos en oportunidades</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#procesos">Procesos</a>
+    <a href="#conocenos">Conócenos</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="card">
+      <h2>Bienvenidos a EcoTransforma</h2>
+      <p>Somos una planta recicladora comprometida con el medio ambiente. Damos una nueva vida a los residuos para reducir el impacto ambiental y fomentar una economía circular.</p>
+      <img src="2.jpg" alt="Centro de reciclaje visible">
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="card">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Recolección de materiales reciclables</li>
+        <li>Clasificación y tratamiento</li>
+        <li>Reciclaje de residuos electrónicos y domésticos</li>
+        <li>Educación ambiental para escuelas y empresas</li>
+      </ul>
+      <img src="4.jpg" alt="Reciclaje de plástico visible">
+    </div>
+  </section>
+
+  <section id="procesos">
+    <div class="card">
+      <h2>Proceso de Reciclaje</h2>
+      <p>Realizamos un proceso riguroso y eficiente para convertir residuos en recursos valiosos:</p>
+      <ol>
+        <li>Recepción y pesaje de residuos</li>
+        <li>Separación por tipo y limpieza</li>
+        <li>Compactado y procesamiento</li>
+        <li>Transformación o envío a industrias recicladoras</li>
+      </ol>
+      <img src="31.jpg" alt="Proceso industrial visible">
+    </div>
+  </section>
+
+  <section id="conocenos">
+    <div class="card">
+      <h2>Conócenos</h2>
+      <p>Conformamos un equipo comprometido con el medio ambiente y el desarrollo sostenible:</p>
+      <ul>
+        <li><strong>Emmanuel Romero Acevedo</strong> – CEO</li>
+        <li><strong>Ian Samuel Sanchez Ordaz</strong> – Director de Operaciones</li>
+        <li><strong>Gamaliel Perez Guzman</strong> – Jefe de Logística</li>
+        <li><strong>Alan Huerta Salome</strong> – Coordinador de Innovación y Tecnología</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ubicacion">
+    <div class="card">
+      <h2>¿Dónde estamos?</h2>
+      <p>📍 Escuela Superior de Economía, IPN – Ciudad de México</p>
+      <iframe src="https://maps.google.com/maps?q=Escuela%20Superior%20de%20Econom%C3%ADa%20IPN&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="card">
+      <h2>Contacto</h2>
+      <p>📧 contacto@ecotransforma.mx</p>
+      <p>📞 +52 55 1234 5678</p>
+      <form onsubmit="enviarFormulario(event)">
+        <label>Nombre:<br><input type="text" id="nombre" required /></label><br><br>
+        <label>Mensaje:<br><textarea id="mensaje" required></textarea></label><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="respuesta"></p>
+    </div>
+  </section>
+
+  <section id="creditos">
+    <div class="card">
+      <h2>Nota del Grupo 2EM12</h2>
+      <p>Integrantes:</p>
+      <ul>
+        <li>Emmanuel Romero Acevedo</li>
+        <li>Ian Samuel Sanchez Ordaz</li>
+        <li>Gamaliel Perez Guzman</li>
+        <li>Alan Huerta Salome</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EcoTransforma | Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function enviarFormulario(e) {
+      e.preventDefault();
+      document.getElementById('respuesta').innerText = 'Gracias por contactarnos. Te responderemos pronto.';
+      document.getElementById('nombre').value = '';
+      document.getElementById('mensaje').value = '';
+    }
+  </script>
+
+</body>
+</html>
